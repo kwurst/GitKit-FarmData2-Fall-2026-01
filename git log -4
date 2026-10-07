@@ -1,0 +1,223 @@
+[33mcommit 09f4356f138f75ea0821ed73ac0e789ee5c7a099[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: kit <kit@example.com>
+Date:   Tue Aug 25 17:00:48 2026 +0000
+
+    chore: install kit
+
+[33mcommit d622e8d6d71e27890c73e2428e6dcf9d44ca606e[m
+Author: Batese2001 <69521504+Batese2001@users.noreply.github.com>
+Date:   Mon Oct 11 09:16:07 2021 -0400
+
+    Summary Table Timing and No Log Messages (#289)
+    
+    * Added a message when a date range contains no logs
+    
+    * Summary Tables now remain invisible until the API returns
+    
+    * Summary now shows a message when only direct or tray seeding is in the table
+    
+    * Added Testing for the One Type Message code
+    
+    * Added testing for No Logs message
+    
+    * Added testing for summary table showing up after fully loaded table
+    
+    * Removed redundant logins
+    
+    * Replaced "before" with "beforeEach" and tests now run without 403 errors
+
+[33mcommit 80b4408aa0df6dadc4e5e2c310a5e5cbbc0b9d35[m
+Author: IrisSC <54850069+IrisSC@users.noreply.github.com>
+Date:   Fri Oct 8 14:58:59 2021 -0400
+
+    No Default Label For Drop Down Component (#293)
+    
+    * There is no longer a default label for the DropDownWithAllComponent.
+
+[33mcommit 73feb3808ae8978deaddfeb9eb14ef6d99457d18[m
+Author: IrisSC <54850069+IrisSC@users.noreply.github.com>
+Date:   Fri Oct 8 11:10:30 2021 -0400
+
+    Reorder Seeding  Inputs (#281)
+    
+    * The cypress tests now work with the new order of the inputs.
+    
+    * changed the label or the inputs under the Labor section. Put them all into one line
+    
+    * changed "Number of Seeds Plants" to "Number of Seeds Planted".
+
+[33mcommit e89280874021a1ab107ea28bf71928187cd442b2[m
+Author: Grant Braught <braught@dickinson.edu>
+Date:   Tue Oct 5 07:52:52 2021 -0400
+
+    Removed Prettier Ignore
+    
+    Comment was added to prevent reformatting by contributor's IDE.  Eventually want to move to using prettier for formatting and didn't want this file to be ignored if/when that happens.  So kept the contribution but removed the comment.
+
+[33mcommit 2b1a8bd298bd1c70e2e4d24be66308fdcd4e58fe[m
+Author: Elad Sheskin <fiveminutes001@gmail.com>
+Date:   Tue Oct 5 14:49:30 2021 +0300
+
+    Updated comment (#288)
+    
+    * Updated comment
+    
+    * prettier-ignore comment added
+
+[33mcommit bda14d2bd89fb1fdc08c3471b9552b2484c1e1fe[m
+Author: IrisSC <54850069+IrisSC@users.noreply.github.com>
+Date:   Mon Oct 4 10:16:02 2021 -0400
+
+    Mark Required Inputs (#286)
+    
+    * added red astrix to all reuired inputs, except those that are about labor. Also added sentence beforesubmit button explaining that all inputs with in astrix need to be filled before the user is able to click the submit button.
+    
+    * All required inputs are now marked by a red astrix.
+    
+    * took out required mark from time unit input.
+
+[33mcommit be6ed516d5eeb982f38487d474f3c4c0f38187f6[m
+Author: Batese2001 <69521504+Batese2001@users.noreply.github.com>
+Date:   Wed Sep 29 08:40:18 2021 -0400
+
+    Spinner reappear (#282)
+    
+    * Loading spinner is now visible after each new date selection
+    
+    * Cypress testing for Loading Spinner has been implemented
+    
+    * Testing now checks if the spinner remains between the button click and API return
+    
+    * Removed faulty test
+    
+    * Removed .only from tests
+
+[33mcommit d10627d3a4dbafb0a9660cd3e85e0513806f266e[m
+Author: IrisSC <54850069+IrisSC@users.noreply.github.com>
+Date:   Mon Sep 27 08:33:27 2021 -0400
+
+    Input Log Submit Button Popup (#279)
+    
+    * when submit button is clicked there is a popup that says that a log has been submitted and asks the user if they want to go to the seeding report page. If the user clicks ok then it takes them there.
+    
+    * create a new labor section and moved number of workers and time spent to that section.
+    
+    * The cypress tests now work with the new order of the inputs.
+    
+    * Added cypress tests to test that the popup appears. When cancel is clicked it returns to the current page and when ok is clicked it takes the user to the Seeding Report Page.
+
+[33mcommit 3ec8a13fb27ed4bf1e5ea27aa8197ffa2c528466[m
+Author: Grant Braught <braught@dickinson.edu>
+Date:   Wed Sep 8 15:22:10 2021 -0400
+
+    Removed apt update from Cypress Dockerfile (#280)
+    
+    As apt packages were modified by others this began generating errors.
+    Becasue this is a dev only container we'll leave everything fixed
+    at the versions in the base container to prevent future errors. Everything
+    can be moved to newer versions all at once when necessary.
+
+[33mcommit 78d31a973a503b147ddb10c7e6a38f40a5046488[m
+Author: IrisSC <54850069+IrisSC@users.noreply.github.com>
+Date:   Wed Sep 8 15:09:45 2021 -0400
+
+    Default Feet Unit Bed (#276)
+    
+    * The default unit for the number of feet under direct seeding is now bed, instead of nothing
+    
+    * tests that bed is the default unit. Cleans up beforeEachs and other tests that select bed, since it is now selected for them.
+
+[33mcommit 06624a8bb27bee746aa31d613ce3713b41bf7972[m
+Author: IrisSC <54850069+IrisSC@users.noreply.github.com>
+Date:   Wed Sep 8 12:05:40 2021 -0400
+
+    Default Time Unit To Minutes (#277)
+    
+    * the time unit now defaults to minutes.
+    
+    * Tests that it defaults to minutes. Also cleaned up beforeEachs that select minutes, so they are no longer in the test code.
+
+[33mcommit 78307c941e88d8805283773946ff824cef42595f[m
+Author: Grant Braught <braught@dickinson.edu>
+Date:   Wed Sep 1 10:01:01 2021 -0400
+
+    Added Vue Components links and also pointers to FD2 specific testing docs.
+
+[33mcommit 953ea80f163bc47ee020757ffd7161b17d96e877[m
+Author: Grant Braught <braught@dickinson.edu>
+Date:   Wed Sep 1 09:43:32 2021 -0400
+
+    Removed unused developmet modules (#275)
+
+[33mcommit f2ea32a89ae654972733c16989b5f14c61b9e8f7[m
+Author: josieecook <60167626+josieecook@users.noreply.github.com>
+Date:   Mon Aug 9 14:47:02 2021 -0400
+
+    Component and Function Documentation (#262)
+    
+    * Added documentation for the custom table component
+    
+    * Added documentation for the dropdown with all component
+    
+    * Added documentation for the dateSelectionComponent.
+    
+    * pulled from origin
+    
+    * Fixed some grammatical, spelling and wording issues.
+    
+    * Added documentation for the getAllPages function.
+    
+    * Added documentation for the getSessionToken function.
+    
+    * Added documentation for the DateRangeSelectionComponent.
+    
+    * added documentation for the map functions.
+    
+    * added documentation for the quantityLocation function.
+    
+    * Added documentation for the createRecord() function.
+    
+    * Added documentation for the updateRecord() function
+    
+    * Added documentation fo the deleteRecord() function
+    
+    * Made the component and function names in the README.md bold
+    
+    * Added markup to the whole documentation page
+    
+    Co-authored-by: IrisSC <shakerci@dickinson.edu>
+
+[33mcommit e105569d5d400a1413fef7925d92ab65cd049f59[m
+Author: IrisSC <54850069+IrisSC@users.noreply.github.com>
+Date:   Fri Jul 23 10:24:29 2021 -0400
+
+    Seedings Input Page and Page Tests (#255)
+    
+    * added APIRequestFunction and first test to resources folder
+    
+    * took out api function that is not complete yet
+    
+    * added Seeding Input subtab to field kit tab
+    Co-Author: Josie Cook @josieecook
+    
+    * added date-selection component in page, default date is today.
+    
+    Co-Author: Josie Cook @josieecook
+    
+    * Add dropdown for crops. Contains all crops in the database.
+    
+    Co-Author: Josie Cook @josieecook
+    
+    * Added dropdown for areas. Includes all areas in the database. Selected crop and area are stored in the data.
+    
+    Co-Author: Josie Cook @josieecook
+    
+    * added selection between Direct and Tray Seedings, which is stored in selectedSeedingType.
+    
+    Co-Author: Josie Cook @josieecook
+    
+    * 'added input to put in the number of workers
+    Co-Author: Josie Cook @josieecook'
+    
+    * added time spent with units (miuntes and hours). Added comments field.
+ 
